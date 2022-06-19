@@ -18,7 +18,7 @@ tbody=leaderboard.find('tbody')
 #regular expression for referrance number
 referrancenoreg="[A-Z]{2}\d{8}-\d{5}"
 #regular expression for all data in the table
-regx=["[A-Z]{2}\d{8}-\d{5}","\(\d{3}\)\s\d{3}-\d{4}","[A-Za-z]{3,}\s[A-Za-z]{3,}","[A-Za-z]{6}\s[A-Za-z]{5,}","\s\d{5,}","N\/A","\sn\/a","\d{2}\s\w{3}\s\d{4}\s\d{2}:\d{2}\s[A-Z]{2}","[A-Za-z]{6}\s[A-Za-z]{5,}","[A-Z]{9}","\d{4}\s\w{1,}\s\w{1,}(\s\w{2})?\W\s*\w{1,}\s\w{1,}\W\s\w{2}\W\s\d{5}"]
+regx=["[A-Z]{2}\d{8}-\d{5}","\(\d{3}\)\s\d{3}-\d{4}","[A-Za-z]{3,}\s[A-Za-z]{3,}","[A-Za-z]{6}\s[A-Za-z]{5,}","\s\d{5,}","N\/A","\sn\/a","\d{2}\s\w{3}\s\d{4}\s\d{2}:\d{2}\s[A-Z]{2}","[A-Za-z]{6}\s[A-Za-z]{5,}","[A-Z]{9}","\d{4}\s\w{1,}\s\w{1,}(\s\w{2})?\W\s*\w{1,}\s\w{1,}\W\s\w{2}\W\s\d{5}","(\w{1,}\s*\w{1,}\s\w{1,},\s)?(\w{1,}\s)?(\w{1,},\s)?(\w(1,)\s)?(\w{1,}\s)?(\w{1,}\s)?(\w{1,}\s\w{1,},\s)?\w{1,},\s*(\s*|\w{1,})\s\w{1,},\s\w{1,},.\d{5}"]
 f = open("mytable.txt", "w")
 for tr in tbody.find_all('tr'):
 
